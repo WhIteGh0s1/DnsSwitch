@@ -1,14 +1,18 @@
 # Список DNS для DnsSwitch. Программа скачивает этот файл сама — новые серверы появляются без новой версии.
 # Формат: id | Имя | что открывает | ip1, ip2 | шаблон DoH
-# Проверено 10.10.2026: GeoHide, Comss.one, Astracat, Mafioznik отдают прокси для ChatGPT/Gemini/Claude.
+# Проверено 10.10.2026: GeoHide (Россия и Европа), Comss.one, Astracat, Mafioznik, XyZ DNS отдают прокси для ChatGPT/Gemini/Claude.
 # Malw.link сейчас лежит (их статус-страница), DNS-AI отвечает только российским адресам, Xbox DNS больше не открывает ИИ.
 geohide | GeoHide | ChatGPT, Claude, Grok | 159.194.200.33, 37.230.192.51 | https://dns.geohide.ru/dns-query
 geohide2 | GeoHide узел 2 | ChatGPT, Claude, Grok | 193.233.112.67, 193.233.112.68 | https://dns.geohide.ru/dns-query
 geohide3 | GeoHide узел 3 | ChatGPT, Claude, Grok | 193.233.112.88, 46.8.158.6 | https://dns.geohide.ru/dns-query
+geohide-eu | GeoHide Европа | ChatGPT, Claude, Grok | 143.20.64.192, 45.13.237.213 | https://eu.geohide.ru/dns-query
+geohide-eu2 | GeoHide Европа 2 | ChatGPT, Claude, Grok | 5.175.161.40, 5.175.161.3 | https://eu.geohide.ru/dns-query
+geohide-eu3 | GeoHide Европа 3 | ChatGPT, Claude, Grok | 31.25.239.132 | https://eu.geohide.ru/dns-query
 comss | Comss.one | Gemini, ChatGPT, Claude | 83.220.169.155, 212.109.195.93 | https://dns.comss.one/dns-query
 comss2 | Comss.one резерв | Gemini, ChatGPT, Claude | 195.133.25.16 | https://router.comss.one/dns-query
 astracat | Astracat | ChatGPT, Gemini, Claude | 135.106.217.200 | https://dns.astracat.ru/dns-query
 mafioznik | Mafioznik | через прокси Comss | 103.27.157.38 |
+xyz | XyZ DNS | ChatGPT, Gemini, Claude | 109.120.137.190 | https://dns.yo1nk.app/dns-query
 malw | Malw.link | Gemini, ChatGPT, Claude, Copilot | 95.216.204.218, 80.253.249.40 | https://dns.malw.link/dns-query
 dnsai | DNS-AI | ChatGPT, Claude | 192.144.59.14, 186.246.49.127 | https://dns.dns-ai.ru/dns-query
 xbox | Xbox DNS | только Xbox Live | 111.88.96.54, 111.88.96.55 | https://xbox-dns.ru/dns-query
